@@ -47,7 +47,7 @@ function getImageURL(index) {
 }
 
 // Defines the N size of last images that will not be repeated.
-const size_of_non_repeat = 12
+const size_of_non_repeat = 24
 // List of the index of the last N selected images.
 const last_indexes = Array(size_of_non_repeat)
 
@@ -118,6 +118,6 @@ getHighestImageIndex()
   .then(() => {
     setInterval(applyOverlayToThumbnails, 100);
     console.log(
-      "ScottTheWoztify Loaded Successfully, " + highestImageIndex + " images detected. " + blacklistStatus
+      "ScottTheWoztify Loaded Successfully, " + highestImageIndex + " images detected."
     );
   })

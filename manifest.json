@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "YouTube ScottTheWozify",
     "version": "1.5",
     "icons": {
@@ -10,7 +10,7 @@
         "96": "icons/icon-96.png"
     },
     "description": "Modify YouTube thumbnails to include Scott The Woz",
-    "permissions": [
+    "host_permissions": [
         "https://www.youtube.com/*"
     ],
     "content_scripts": [{
@@ -18,8 +18,13 @@
         "js": ["scottthewozify.js"],
         "run_at": "document_idle"
     }],
-    "web_accessible_resources": [
-        "images/*.png",
-        "images/*.json"
-    ]
+    "web_accessible_resources": [{
+        "resources": [
+            "images/*.png",
+            "images/*.json"
+        ],
+        "matches": [
+            "*://*/*"
+        ]
+    }]
 }
