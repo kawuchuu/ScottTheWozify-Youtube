@@ -114,10 +114,14 @@ async function getHighestImageIndex() {
   highestImageIndex = max;
 }
 
-getHighestImageIndex()
-  .then(() => {
-    setInterval(applyOverlayToThumbnails, 100);
-    console.log(
-      "ScottTheWoztify Loaded Successfully, " + highestImageIndex + " images detected."
-    );
-  })
+chrome.storage.local.get('enabled', (items) => {
+  if (items.enabled) {
+    getHighestImageIndex()
+    .then(() => {
+      setInterval(applyOverlayToThumbnails, 100);
+      console.log(
+        "ScottTheWozify loaded successfully, " + highestImageIndex + " images detected."
+      );
+    })
+  }
+})

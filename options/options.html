@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScottTheWozify</title>
+    <style>
+        @font-face {
+            font-family: 'Madras';
+            src: url('../fonts/MadrasExtraBoldItalic.otf') format('opentype');
+        }
+        body {
+            --accent: #3b57ff;
+            width: 400px;
+            height: 225px;
+            border: solid 10px var(--accent);
+            margin: 0px;
+            font-family: 'Madras', sans-serif;
+            background-color: black;
+            color: white;
+            user-select: none;
+            -moz-user-select: -moz-none;
+        }
+        main {
+            margin: 12px;
+            height: calc(100% - 22px);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 54px;
+            margin-bottom: 8px;
+        }
+        h1 {
+            margin: 0px;
+        }
+        .input {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .input.disabled {
+            opacity: 0.6;
+        }
+        .input label, .input input {
+            cursor: pointer;
+        }
+        .input label {
+            margin-left: 10px;
+            font-size: 1.2em;
+        }
+        .input input[type='checkbox'] {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--accent);
+        }
+        button {
+            font-family: inherit;
+            color: inherit;
+            background-color: var(--accent);
+            padding: 6px 8px;
+            font-size: 1.2em;
+            border: none;
+            outline: none;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        button:active {
+            opacity: 0.5;
+        }
+        .footnote {
+            margin-top: 40px;
+            opacity: 0.75;
+        }
+
+        .footnote span {
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <h1>ScottTheWozify Options</h1>
+            <button id="close">Save &amp; Close</button>
+        </div>
+        <div class="options">
+            <div class="input">
+                <input type="checkbox" id="toggleExtension" />
+                <label for="toggleExtension">Enable ScottTheWozify (requires page reload)</label>
+            </div>
+            <div class="input disabled">
+                <input type="checkbox" id="skipChannel" disabled />
+                <label for="skipChannel">Skip Scott The Woz videos (coming at some point)</label>
+            </div>
+        </div>
+        <div class="footnote">
+            <span>made with &lt;3 by kawuchuu, original mrbeastify extension by magicjinn</span>
+        </div>
+    </main>
+    <script src="options.js"></script>
+</body>
+</html>
