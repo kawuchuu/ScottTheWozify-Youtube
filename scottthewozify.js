@@ -114,7 +114,7 @@ async function getHighestImageIndex() {
   highestImageIndex = max;
 }
 
-chrome.storage.local.get('enabled', (items) => {
+chrome.storage.local.get({ enabled: true }, (items) => {
   if (items.enabled) {
     getHighestImageIndex()
     .then(() => {

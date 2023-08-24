@@ -18,9 +18,6 @@
         "96": "icons/icon-96.png"
     },
     "description": "Modify YouTube thumbnails to include Scott The Woz",
-    "host_permissions": [
-        "https://www.youtube.com/*"
-    ],
     "content_scripts": [{
         "matches": ["https://www.youtube.com/*"],
         "js": ["scottthewozify.js"],
