@@ -5,12 +5,15 @@
 
 <br>
 
-Is your browser experience boring? Do you need to
+Is your browser experience boring? Do you need to  
 resist playing Donkey Kong: Barrel Blast?
 
 **Fear no more.**
 
-This extension adds the guy who owns Sonic Jam **Scott The Woz** to every thumbnail.
+This extension adds the guy who  
+owns Sonic Jam **Scott The Woz** to every thumbnail.
+
+</div>
 
 <br>
 
