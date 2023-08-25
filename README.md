@@ -13,6 +13,12 @@ resist playing Donkey Kong: Barrel Blast?
 This extension adds the guy who  
 owns Sonic Jam **Scott The Woz** to every thumbnail.
 
+<br>
+
+[![Button Download Chrome]][Download Chrome]
+
+<img height="400" src="./screenshots/screenshot1.png"/>
+
 </div>
 
 <br>
@@ -27,6 +33,10 @@ owns Sonic Jam **Scott The Woz** to every thumbnail.
 
 
 <!----------------------------------------------------------------------------->
+
+[Button Download Chrome]: https://img.shields.io/badge/Chrome-4285F4?style=for-the-badge&logoColor=white&logo=GoogleChrome
+
+[Download Chrome]: https://chrome.google.com/webstore/detail/scottthewozify/acifigdfnfnafjkkapcghalnemfodmah
 
 [MrBeastify Repo]: https://github.com/MagicJinn/MrBeastify-Youtube
 [UI YouTube]: https://www.youtube.com/@UnnecessaryInventions
